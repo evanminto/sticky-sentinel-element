@@ -1,0 +1,9 @@
+{
+  "name": "@evanminto/sticky-sentinel-element",
+  "version": "0.1.0",
+  "description": "Custom element for detecting when another element has become \"stuck.\"",
+  "main": "src/sticky-sentinel-element.js",
+  "repository": "git@github.com:evanminto/sticky-sentinel-element.git",
+  "author": "Evan Minto <vamptvo@gmail.com>",
+  "license": "MIT"
+}

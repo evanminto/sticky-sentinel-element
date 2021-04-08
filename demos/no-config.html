@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Demo: No Config</title>
+
+    <script src="../src/sticky-sentinel-element.js" type="module"></script>
+
+    <style>
+      html,
+      body {
+        margin: 0;
+      }
+
+      body {
+        min-height: 200vh;
+      }
+
+      .sticky-header {
+        background: white;
+        padding: 1.5rem;
+        position: sticky;
+        top: 0;
+        transition: box-shadow 250ms ease-in-out;
+      }
+
+      sticky-sentinel[stuck] ~ .sticky-header {
+        box-shadow: 0 0.125rem 0.5rem hsla(0, 0%, 0%, 0.25);
+      }
+    </style>
+  </head>
+
+  <body>
+    <sticky-sentinel></sticky-sentinel>
+    <div class="sticky-header">Sticky Site Header</div>
+  </body>
+</html>
